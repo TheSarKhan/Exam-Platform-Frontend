@@ -1,0 +1,268 @@
+.login-img__container {
+  background: #4891e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.login-img__container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 30px;
+}
+
+.content {
+  width: 100%;
+  max-width: 420px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.form-group .form-input {
+  padding: 13px 16px;
+  border-radius: 10px;
+  border: 1px solid #d8dadc;
+  background: #fff;
+  font-size: 14px;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.country-code-select {
+  border: none;
+  background-color: #f5f5f5;
+  padding: 0.6rem;
+  font-size: 14px;
+  outline: none;
+}
+
+.phone-number-input {
+  flex: 1;
+  border: none;
+  padding: 0.6rem;
+  font-size: 14px;
+}
+
+.password-container {
+  position: relative;
+}
+
+.showpassword_icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.roles {
+  display: flex;
+  width: 100%;
+  margin-top: 6px;
+}
+
+.roles button {
+  flex: 1;
+  padding: 12px 0;
+  border: 1px solid #ccc;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.submit_btn {
+  width: 100%;
+  padding: 16px;
+  border-radius: 10px;
+  background: #1865f2;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.submit_btn:disabled {
+  background: #91b2eeff;
+  cursor: not-allowed;
+}
+
+.register_google {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #d8dadc;
+  padding: 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  background: #fff;
+  margin-top: 12px;
+}
+
+.content-header {
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .d-flex {
+    flex-direction: column;
+  }
+
+  .login-img__container {
+    padding: 20px;
+  }
+
+  .content-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    max-width: 100%;
+  }
+
+  .roles button {
+    font-size: 13px;
+    padding: 10px 0;
+  }
+
+  .submit_btn {
+    font-size: 16px;
+    padding: 14px;
+  }
+
+  .register_google {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .content-header {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-group label {
+    font-size: 13px;
+  }
+
+  .form-group .form-input,
+  .phone-number-input,
+  .country-code-select {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .submit_btn {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .register_google {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .content-header {
+    font-size: 22px;
+  }
+}
+.condition_btn {
+  color: #1865f2;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  border: none;
+  outline: none;
+  background-color: white;
+}
+.checkbox {
+  width: 16px;
+  height: 16px;
+  margin-right: 11px;
+}
+.register_link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  margin-top: 14px;
+  margin-bottom: 16px;
+}
+.register_link::before {
+  content: "";
+  width: 37%;
+  background: #d8dadc;
+  height: 2px;
+  display: inline-block;
+  margin-right: 4px;
+}
+.register_link::after {
+  content: "";
+  width: 33%;
+  background: #d8dadc;
+  height: 2px;
+  display: inline-block;
+  margin-left: 4px;
+}
+.login_link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+}
+.register-modal__nav{
+  display: flex;
+  justify-content: space-between;
+}
+.register-modal__btn {
+  padding: 17px 0;
+  border: none;
+  outline: none;
+  background-color: white;
+}
+.register-modal__content{
+  height: 100%;
+  overflow-y: auto;
+}

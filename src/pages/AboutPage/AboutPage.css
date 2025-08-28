@@ -1,0 +1,28 @@
+.about h1 h2 {
+  color: #000;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.superiority {
+  padding: 110px 115px;
+}
+.superiority-title {
+  margin-bottom: 70px;
+  text-align: center;
+  font-size: 46px;
+  font-weight: 600;
+}
+.superpriority-items .row .col-lg-4 img {
+  display: inline-block;
+  margin-bottom: 36px;
+}
+.pricing-content_header {
+  color: #000;
+  text-align: center;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

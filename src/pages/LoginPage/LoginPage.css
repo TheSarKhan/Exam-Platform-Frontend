@@ -1,0 +1,17 @@
+.content-header {
+  display: flex;
+  position: relative;
+}
+.content-header img {
+  position: absolute;
+  left: -50px;
+  top: 4px;
+}
+.forget_link {
+  color: #1f4ea4;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  text-decoration: none;
+}

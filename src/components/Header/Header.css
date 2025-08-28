@@ -1,0 +1,244 @@
+.header-container {
+  background-color: #fff;
+  padding: 1rem 2rem;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo a {
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  color: #1a1a1a;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.nav-links a:hover {
+  color: #555;
+}
+
+.right-side-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logged-in-container {
+  display: flex;
+  /* align-items: center; */
+  gap: 1rem;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.icon-button:hover {
+  color: #000;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+}
+
+.logged-in-button {
+  padding: 14px 18px;
+  background-color: #1865f2;
+  border-radius: 11px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logged-in-button:hover {
+  background-color: #0056b3;
+}
+
+.contact-button {
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: 1px solid #0aae28;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  color: #0aae28;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #4ade80;
+  color: #fff;
+}
+
+.contact-button-container {
+  margin-left: 2rem;
+}
+
+.mobile-menu-toggle,
+.mobile-nav {
+  display: none;
+}
+
+.menu-icon {
+  height: 24px;
+  width: 24px;
+  stroke: #333;
+}
+
+@media (max-width: 769px) {
+  .desktop-nav,
+  .right-side-content {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile-nav {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .mobile-nav.closed {
+    transform: translateY(-100%);
+  }
+
+  .mobile-nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .mobile-nav-links a {
+    font-family: "Inter", sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+  }
+
+  .mobile-nav-link-with-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .mobile-icon {
+    height: 24px;
+    width: 24px;
+    color: #555;
+  }
+
+  .contact-button-mobile {
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #4ade80;
+    border-radius: 9999px;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4ade80;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: block;
+  }
+
+  .contact-button-mobile:hover {
+    background-color: #3ebe6d;
+    color: #fff;
+  }
+
+  .contact-button-mobile.logged-in {
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: #fff;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .nav-links {
+    gap: 1rem;
+    font-size: 14px;
+  }
+  .nav-links a {
+    font-size: 14px;
+  }
+  .logged-in-container {
+    gap: 0.5rem;
+  }
+  .logged-in-button {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+  .logo a {
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 16.5px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .icon-button img {
+    width: 20px;
+    height: 20px;
+  }
+}

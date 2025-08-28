@@ -1,0 +1,219 @@
+.payment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.header-section {
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 2rem;
+}
+.payriffLogo {
+  margin-bottom: 50px;
+}
+.back-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #1e1e1e;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  column-gap: 5px;
+}
+
+.back-arrow-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+}
+
+.order-details-panel {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card-details-panel {
+  flex: 1;
+  padding: 2.5rem;
+  background-color: #f8f9fa;
+  border-left: 1px solid #e9ecef;
+}
+
+.panel-title {
+  color: #1a1a1a;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  margin-bottom: 20px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  color: #555;
+}
+
+.detail-label {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+
+.detail-value {
+  color: #1a1a1a;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 25px */
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.checkbox-input {
+  width: 20px;
+  margin-right: 0.5rem;
+}
+
+.checkbox-label {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 22.5px */
+}
+
+.card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.payment-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.form-row .payment-form-group {
+  flex: 1;
+  width: 100%;
+}
+
+.form-label {
+  font-size: 0.875rem;
+  color: #6c757d;
+  font-weight: 600;
+}
+
+.payment-form-input {
+  padding: 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #1a1a1a;
+}
+
+.form-input::placeholder {
+  color: #adb5bd;
+}
+
+.payment-submit-button {
+  border-radius: 10px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 20px */
+  transition: background-color 0.2s;
+  border: none;
+}
+
+.payment-submit-button--pay {
+  background-color: #1865f2;
+  padding: 17px 152px;
+
+  color: #fff;
+}
+
+.payment-submit-button--pay:hover {
+  background: #0d4bbc;
+}
+
+.payment-submit-button--reject {
+  padding: 18px 100px;
+
+  background-color: transparent;
+  color: #1865f2;
+  border: 1px solid #1865f2;
+}
+
+.payment-submit-button--reject:hover {
+  background-color: #e9ecef;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .card-details-panel {
+    border-left: none;
+    border-top: 1px solid #e9ecef;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-container {
+    padding: 1rem;
+  }
+
+  .header-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}

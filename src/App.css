@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo_name {
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  margin-bottom: 0;
+}
+.logo__name--white {
+  color: white;
+}
+.logo__name--white {
+  color: white;
+}
+.logo__name--black {
+  color: black;
+}
+.logo__name--32 {
+  font-size: 32px;
+}
+.logo__name--28 {
+  font-size: 28px;
+}
+@media (min-width: 992px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 980px !important;
+  }
+}
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1460px !important;
+  }
+}

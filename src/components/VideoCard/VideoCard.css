@@ -1,0 +1,118 @@
+.instruction-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: Arial, sans-serif;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .instruction-content {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+.video-card {
+  background-color: #f0f8ff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 500px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.video-card__video {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  background-color: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.video-card__video-iframe,
+.video-thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.video-thumbnail-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.play-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+/* .play-overlay img{
+  width: 74px;
+} */
+
+.play-overlay:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.play-icon {
+  width: 80px;
+  height: 80px;
+  color: #fff;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
+  transition: transform 0.3s ease;
+}
+
+.play-overlay:hover .play-icon {
+  transform: scale(1.1);
+}
+
+.video-card__text {
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  min-height: 3rem; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-card__button {
+  background-color: #1865f2;
+  color: white;
+  padding: 16px 5px;
+  border-radius: 7px;
+
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.video-card__button:hover {
+  background-color: #164e9e;
+}
