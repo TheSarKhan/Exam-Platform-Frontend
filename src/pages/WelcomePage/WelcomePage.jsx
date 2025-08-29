@@ -51,27 +51,27 @@ function WelcomePage() {
               ))}
             </div>
             <div className="exams-content_btn">
-              <Link to='/exams' href="">daha çox</Link>
+              <Link to="/exams" href="">
+                daha çox
+              </Link>
             </div>
           </div>
         </section>
-      </div>
-      <section className="ads">
-        <section className="embla2">
-          <div className="embla__viewport2" ref={emblaRef}>
-            <div className="embla__container2">
-              {ads.map((data, index) => (
-                <div className="embla__slide2" key={index}>
-                  <div className="embla__slide-container">
-                    <img src={data.img} alt="" />
+        <section className="ads">
+          <section className="embla2">
+            <div className="embla__viewport2" ref={emblaRef}>
+              <div className="embla__container2">
+                {ads.map((data, index) => (
+                  <div className="embla__slide2" key={index}>
+                    <div className="embla__slide-container">
+                      <img src={data.img} alt="" />
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
+          </section>
         </section>
-      </section>
-      <div className="container">
         <section className="testimonial-author">
           <Testimonial text={text} color={"white"} bgColor={"rgba(24, 101, 242, 1)"} img={authorStudent} top={-263} right={0} author={"Aytən Əliyeva"} weight={600} fontSize={30} />
         </section>

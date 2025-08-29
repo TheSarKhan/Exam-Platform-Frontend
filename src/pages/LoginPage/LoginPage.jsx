@@ -24,19 +24,13 @@ function Login() {
   const handleSubmit = e => {
     e.preventDefault();
     dispatch(loginUser({ email, password }));
-  };
-  useEffect(() => {
+    console.log("l", loading);
+    console.log("er", error);
     if (accessToken && role) {
-      console.log("girdi");
-      if (role === "TEACHER") {
-        navigate("/teacher/dashboard");
-      } else if (role === "STUDENT") {
-        navigate("/student/dashboard");
-      } else {
-        navigate("/");
-      }
+      navigate("/");
     }
-  }, [accessToken, role, navigate]);
+  };
+
   const toggleEye = () => {
     setPassShow(!passShow);
   };
@@ -54,7 +48,7 @@ function Login() {
           <div className="content-container">
             <div className="content">
               <div className="content-header">
-                <Link to='/' >
+                <Link to="/">
                   <img src={backArrow} alt="back-arrow" />
                 </Link>
                 <h1>Daxil Ol</h1>

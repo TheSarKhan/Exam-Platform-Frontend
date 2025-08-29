@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import TeacherLayout from "../layouts/TeacherLayout";
-import TeacherProfile from "../pages/teacher/TeacherProfilePage/TeacherProfilePage";
 import ProtectedRoute from "../components/ProtectedRoute";
+import Profile from "../pages/teacher/Profile/Profile";
 
 export default function TeacherRoutes() {
   return (
@@ -11,7 +11,7 @@ export default function TeacherRoutes() {
           path="profile"
           element={
             <ProtectedRoute role={"TEACHER"}>
-              <TeacherProfile />
+              <Profile />
             </ProtectedRoute>
           }
         />

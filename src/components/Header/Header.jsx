@@ -4,12 +4,14 @@ import searchIcon from "../../assets/icons/search-normal.png";
 import profileIcon from "../../assets/icons/profile-circle.png";
 import notificationIcon from "../../assets/icons/notification.png";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const store = useSelector(store => store.auth);
+  const navigate = useNavigate();
   const user = store.role;
+  const isStudent=user=="STUDENT";
   const handleMenuToggle = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -48,7 +50,7 @@ function Header() {
                 <button className="icon-button">
                   <img src={notificationIcon} alt="" />
                 </button>
-                <button className="icon-button">
+                <button type="button" onClick={()=>navigate(isStudent?'/student/profile':'/teacher/profile')} className="icon-button">
                   <img src={profileIcon} alt="" />
                 </button>
                 {/* <a href="#" className="logged-in-button">
@@ -119,11 +121,11 @@ function Header() {
                       <span>Profil</span>
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="#" onClick={handleMenuToggle} className="contact-button-mobile logged-in">
                       Yeni imtahan yarat
                     </a>
-                  </li>
+                  </li> */}
                 </>
               ) : (
                 <div className="contact-button-container">

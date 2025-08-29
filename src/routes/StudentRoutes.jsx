@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import StudentLayout from "../layouts/StudentLayout";
-import StudentProfile from "../pages/student/StudentProfilePage/StudentProfilePage";
 import ProtectedRoute from "../components/ProtectedRoute";
+import Profile from "../pages/student/Profile/Profile";
 
 export default function StudentRoutes() {
   return (
@@ -11,18 +11,11 @@ export default function StudentRoutes() {
           path="profile"
           element={
             <ProtectedRoute role={"STUDENT"}>
-              <StudentProfile />
+              <Profile />
             </ProtectedRoute>
           }
         />
-        {/* <Route
-          path="exams"
-          element={
-            <ProtectedRoute role={"STUDENT"}>
-              <StudentExams />
-            </ProtectedRoute>
-          }
-        /> */}
+        <Route path="exams" element={<ProtectedRoute role={"STUDENT"}>{/* <StudentExams /> */}</ProtectedRoute>} />
       </Route>
     </Routes>
   );

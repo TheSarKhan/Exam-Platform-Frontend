@@ -6,7 +6,7 @@ export default function ProtectedRoute({ children, role }) {
   console.log(children);
   
   if (!user.role) {
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/" replace />;
   }
 
   if (role && user.role !== role) {

@@ -7,7 +7,6 @@ import closeEye from "../../assets/icons/closeEye.png";
 import googleIcon from "../../assets/icons/google.png";
 import { useGetTermsQuery, useRegisterMutation } from "../../redux/services/api";
 import { Link, useNavigate } from "react-router-dom";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
 
@@ -206,7 +205,7 @@ function Register() {
               <div className="form-group text-center ">
                 <p>
                   Hesabın var?
-                  <Link to='/auth/login' className="login_link mx-1" href="">
+                  <Link to="/auth/login" className="login_link mx-1" href="">
                     Daxil ol
                   </Link>
                 </p>
